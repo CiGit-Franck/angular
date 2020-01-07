@@ -1,0 +1,20 @@
+cd /cygdrive/c/devpt/Simplon
+git clone https://github.com/CiGit-Franck/angular.git
+
+cd /cygdrive/c/devpt/Simplon/angular
+git pull https://github.com/CiGit-Franck/angular.git
+
+https://stackblitz.com/
+https://fty-store.stackblitz.io
+
+app-root
+	app-head
+	app-body
+	app-foot
+
+instal node.js
+npm install -g @angular/cli
+ng new my-app
+ng serve
+ng generate component xyz
+
