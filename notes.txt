@@ -1,5 +1,9 @@
 cd /cygdrive/c/devpt/Simplon
 git clone https://github.com/CiGit-Franck/angular.git
+git init
+git add *
+git commit -m "first commit"
+git push
 
 cd /cygdrive/c/devpt/Simplon/angular
 git pull https://github.com/CiGit-Franck/angular.git
@@ -15,6 +19,14 @@ app-root
 instal node.js
 npm install -g @angular/cli
 ng new my-app
-ng serve
+ng serve --open
 ng generate component xyz
 
+[brief]
+https://github.com/SylvainSimplonGit/angular-timeline.git
+https://stackblitz.com/edit/fty-timeline
+[prez]
+Template de la liste des Timelime utilise principalement 3 notions d'angular :
+- interpolation : permet d'afficher dans le html des attributs issus de module (ex. id du timeline)
+- property binding : permet d'interpréter une valeur comme balise html (ex.routerLink)
+- event binding : gestion d'event dans le html (ex.click)
