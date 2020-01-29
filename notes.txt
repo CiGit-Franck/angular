@@ -53,5 +53,5 @@ Template de la liste des Timelime utilise principalement 3 notions d'angular :
 		attribut;
 		consume(value: <type>) { this.attribut = vvalue; }
 	Template<root> ->
-		<app-b ></app-b>
+		<app-b (attribut)="consume($event)"></app-b>
 	
