@@ -5,28 +5,53 @@ git add *
 git commit -m "first commit"
 git push
 
-cd /cygdrive/c/devpt/Simplon/angular
+cd /devpt/Simplon/angular.
 git pull https://github.com/CiGit-Franck/angular.git
 
 https://stackblitz.com/
 https://fty-store.stackblitz.io
+https://stackblitz.com/@vincent78-devweb 
 
-app-root
-	app-head
-	app-body
-	app-foot
+<app-root>
+	<app-head>
+	<app-body>
+	<app-foot>
 
+--
 instal node.js
+npm config set proxy "http://a178423:<mdp>@138.21.88.176:3128"
 npm install -g @angular/cli
 ng new my-app
+ng add @angular/material
+ng add @angular/flex-layout
+npm install @ngx-translate/core @ngx-translate/http-loader rxjs --save
 ng serve --open
 ng generate component xyz
+--
 
 [brief]
 https://github.com/SylvainSimplonGit/angular-timeline.git
 https://stackblitz.com/edit/fty-timeline
+
 [prez]
 Template de la liste des Timelime utilise principalement 3 notions d'angular :
 - interpolation : permet d'afficher dans le html des attributs issus de module (ex. id du timeline)
 - property binding : permet d'interpréter une valeur comme balise html (ex.routerLink)
 - event binding : gestion d'event dans le html (ex.click)
+
+[Module <--> Template]
+- Component<a> Module<a> > Template<a> --> interpolaation : 
+	Module<a> -> attribut = 'valeur'
+	Template<a> -> {{ attribut }}
+- Root module < Component<b> --> @Output() :
+	Module<b> ->
+		@Output() attribut = new EventEmmitter<type>();
+		push(value) { this.attribut.emit(value); }
+	Template<b> ->
+		<select (change)="push($event.target.value">
+	Module<root> ->
+		attribut;
+		consume(value: <type>) { this.attribut = vvalue; }
+	Template<root> ->
+		<app-b ></app-b>
+	
