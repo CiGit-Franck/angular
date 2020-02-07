@@ -2,7 +2,7 @@ cd /cygdrive/c/devpt/Simplon
 git clone https://github.com/CiGit-Franck/angular.git
 git init
 git add *
-git commit -m "first commit"
+git commit -m "daily commit"
 git push
 
 cd /devpt/Simplon/angular.
