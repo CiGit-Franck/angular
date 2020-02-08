@@ -21,6 +21,7 @@ https://stackblitz.com/@vincent78-devweb
 instal node.js
 npm config set proxy "http://a178423:<mdp>@138.21.88.176:3128"
 npm install -g @angular/cli
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 ng new my-app
 ng add @angular/material
 ng add @angular/flex-layout
